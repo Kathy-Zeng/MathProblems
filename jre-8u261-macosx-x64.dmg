@@ -1,0 +1,42 @@
+// Kathy Zeng
+// 9/8/20
+// MathProblems.java
+// This program declares and initializes variables, stores the result of an expression
+// in a variable, then prints the variable using println as well as printf and Format
+// to print a double to two places, ints and a char.
+
+public class MathProblems
+{
+	public static void main(String [] args);
+	{
+		double number1;
+		number1 = 0.0;
+		
+		number1 = 5.6*17/3 - 49%11/2;
+		
+		System.out.println("\n\n\n");
+		System.out.println("1) 5.6*17/3 - 49%%11/2 = %5.2f%n", number1); 
+		System.out.println( "1) 5.6*17/3 - 49%%11/2 = " + Format.left(number1, 5, 2) ); 
+         
+        number2 = 16 - 17*(5%6/3);
+
+        System.out.println("\n\n\n");
+        System.out.println("2) 16 - 17*(5%6/3 = %5.2f%n", number2);
+        System.out.println( "2) 16 - 17*(5%6/3 = " + Format.left(number2, 5, 2) );
+
+        char number3;
+
+        number3 = 56/2+17*3 - 9%9;
+        System.out.println("\n\n\n");
+        System.out.println("3) 56/2+17*3 - 9%%9 = %5.2f%n", number3);
+        System.out.println( "3) 56/2+17*3 - 9%%9 = " + Format.left(number3, 5, 2) );
+
+        double number5;
+
+        number5 = 103+(double)(50)/7;
+        System.out.println("\n\n\n");
+        System.out.println("5) 103+(double)(50)/7 = %5.2f%n", number5);
+        System.out.println( "5) 103+(double)(50)/7 = " + Format.left(number5, 5, 2) );
+
+	}
+}
